@@ -80,18 +80,15 @@
     "schemes": [
 		{	
 	"name" : "Blaze",
-//TEXT COLOR
-        "black" : "#21222C",
-//FOLDER PATH BACKGROUND COLOR
-        "blue" : "#FF5555",
+        "black" : "#21222C", //TEXT COLOR
+        "blue" : "#FF5555", //FOLDER PATH BACKGROUND COLOR
         "cyan" : "#8BE9FD",
         "foreground" : "#0373fc",
         "green" : "#0373fc",
         "purple" : "#FF5555",
         "red" : "#FF5555",
         "white" : "#F8F8F2",
-//GIT STATUS BACKGROUND COLOR
-        "yellow" : "#ffffff",
+        "yellow" : "#ffffff", //GIT STATUS BACKGROUND COLOR
         "brightBlack" : "#6272A4",
         "brightBlue" : "#D6ACFF",
         "brightCyan" : "#ffffff",
