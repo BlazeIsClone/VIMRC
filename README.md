@@ -1,12 +1,11 @@
 # Windows Terminal Preview Config
 
 <code>
-// To view the default settings, hold "alt" while clicking on the "Settings" button. 61c54bbd-c2c6-5271-96e7-009a87ff44bf
-// For documentation on these settings, see: https://aka.ms/terminal-documentation 0caa0dad-35be-5f56-a8ff-afceeeaa6101
 
 {
-    "$schema": "https://aka.ms/terminal-profiles-schema",
 
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
 			"launchMode": "maximized",
 			"useTabSwitcher": false,
