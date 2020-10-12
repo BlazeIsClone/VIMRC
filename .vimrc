@@ -65,6 +65,9 @@ let g:airline#extensions#whitespace#enabled = 0
                                 set hidden
                                     nnoremap <C-N> :bnext<CR>
                                         nnoremap <C-B> :bprev<CR>
+                                        "Terminal Command Presets
+                                            set splitbelow
+                                            set termwinsize=20x179
 call plug#begin('~/.vim/plugged')
 "Word under cursor will be searched if no argument is passed to Rg
     Plug 'jremmen/vim-ripgrep'
@@ -115,6 +118,8 @@ call plug#begin('~/.vim/plugged')
                                                             Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
                                                                     "Tab Bar
                                                                 Plug 'drmingdrmer/vim-tabbar'
+                                                                    "Line Indentation
+                                                                        Plug 'yggdroot/indentline'
                         call plug#end() 
                         let g:javascript_plugin_jsdoc = 1
                     "This will call the color Scheme for execution 
