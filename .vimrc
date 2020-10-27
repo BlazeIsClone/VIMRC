@@ -69,6 +69,14 @@ let g:airline#extensions#whitespace#enabled = 0
                                         "Terminal Command Presets
                                             set splitbelow
                                             set termwinsize=20x179
+                                                "NerdTree CMD
+                                                    nmap <F6> :NERDTreeToggle<CR>
+                                                        "Tag Bar Command
+                                                            nmap <F8> :TagbarToggle<CR>
+                                                                "Show hidden
+                                                                   let NERDTreeShowHidden=1 
+                                                                        let NERDTreeHighlightCursorline = 0
+                                                                            set lazyredraw
 call plug#begin('~/.vim/plugged')
 "Word under cursor will be searched if no argument is passed to Rg
     Plug 'jremmen/vim-ripgrep'
@@ -81,8 +89,8 @@ call plug#begin('~/.vim/plugged')
                                         "Status Bar
                                             Plug 'vim-airline/vim-airline'
                                                 Plug 'vim-airline/vim-airline-themes'
-                                                            "Folder Tree
-                                                                Plug 'preservim/nerdtree'
+                                                    "Folder Tree
+                                                            Plug 'preservim/nerdtree'
                                                                     Plug 'townk/vim-autoclose'
                                                                 "Css ColorSlector Display 
                                                             Plug 'gorodinskiy/vim-coloresque'
@@ -117,6 +125,8 @@ call plug#begin('~/.vim/plugged')
                                                                         Plug 'yggdroot/indentline'
                                                                                 "JSX Syntax Support
                                                                                     Plug 'maxmellon/vim-jsx-pretty'
+                                                                                        "TagBar
+                                                                                            Plug 'preservim/tagbar'
                         call plug#end() 
                         let g:javascript_plugin_jsdoc = 1
                     "This will call the color Scheme for execution 
