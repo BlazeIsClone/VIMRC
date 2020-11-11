@@ -77,6 +77,9 @@ let g:airline#extensions#whitespace#enabled = 0
                                                                    let NERDTreeShowHidden=1 
                                                                         let NERDTreeHighlightCursorline = 0
                                                                             set lazyredraw
+                                                                                set nofoldenable
+                                                                                    "No Recording
+                                                                                        map q <Nop>
 call plug#begin('~/.vim/plugged')
 "Word under cursor will be searched if no argument is passed to Rg
     Plug 'jremmen/vim-ripgrep'
