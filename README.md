@@ -1,7 +1,8 @@
 # Windows Terminal Preview Config
 
-<code>
+<pre><code>
 {
+	
     "$schema": "https://aka.ms/terminal-profiles-schema",
     
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
@@ -104,5 +105,6 @@
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": []
 }
-</code>
+
+</code></pre>
 
