@@ -28,6 +28,8 @@ autocmd vimenter * NERDTree
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+"Pretteir Remap
+autocmd FileType javascript nmap <silent> <buffer> <leader>p :Prettier<CR>
 "let g:prettier#quickfix_enabled = 0
 "autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 "let g:prettier#autoformat_require_pragma = 0
@@ -79,9 +81,6 @@ Plug 'gorodinskiy/vim-coloresque'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' } 
 "Syntax Colorscheame For Js
 Plug 'yuezk/vim-js'
-"Javascript Enhanced Syntax Indentation And Auto Completion
-"Plug 'pangloss/vim-javascript'
-"Git integration
 " ---> git commands within vim <---
 Plug 'tpope/vim-fugitive'
 " ---> git changes on the gutter <---
@@ -110,6 +109,8 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'preservim/tagbar'
 "OmniSharp
 Plug 'OmniSharp/omnisharp-vim'
+"Linting For C#
+Plug 'dense-analysis/ale'
 call plug#end() 
 let g:javascript_plugin_jsdoc = 1
 "This will call the color Scheme for execution 
@@ -349,3 +350,17 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " OmniSharp Setup
 inoremap <expr> <Tab> pumvisible() ? '<C-n>' :                                                                                                                    
 \ getline('.')[col('.')-2] =~# '[[:alnum:].-_#$]' ? '<C-x><C-o>' : '<Tab>'
+
+"C# Linter
+let g:ale_linters = {
+      \ 'cs': ['OmniSharp'],
+      \ 'javascript': ['flow-language-server']
+      \}
+let b:ale_linters = ['cs', 'flow-language-server']
+
+autocmd FileType cs nmap <silent> <buffer> <leader>gd <Plug>(omnisharp_go_to_definition)
+autocmd FileType cs nmap <silent> <buffer> <leader>rn <Plug>(omnisharp_rename)
+autocmd FileType cs nmap <silent> <buffer> <leader>ff :OmniSharpCodeFormat<CR>
+
+"Remap CocRestart
+autocmd FileType * nmap <silent> <buffer> <leader>rr :CocRestart<CR>
