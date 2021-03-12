@@ -26,7 +26,7 @@
 		"foreground": "#00ff2f", 	
 		"background": "#262626",
 		"cursorShape" : "filledBox",  
-   		"fontFace": "hack nerd font",
+   		"fontFace": "Hack Nerd Font",
 		"fontSize": 11,
 		"startingDirectory": "D:/code",
 		//"useAcrylic" : true,
