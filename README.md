@@ -5,5 +5,7 @@
                                 ║╚═╝║╚═╝║╔═╗╠╝═╚═╣╚══╗  ╔╬╗╔╝╔╣╠╣║║║║║║║╚╣╚═╝║
                                 ╚═══╩═══╩╝ ╚╩════╩═══╝  ╚╝╚╝ ╚══╩╝╚╝╚╩╝╚═╩═══╝
 
+![image](https://user-images.githubusercontent.com/64116737/111066309-5ea1bd00-84e4-11eb-81d1-accdb001374d.png)
+
 ## Font Setup
 Install `Hack Nerd Font`
